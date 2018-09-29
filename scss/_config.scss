@@ -29,6 +29,19 @@ $background-opacity: 0.7;
     }
 }
 
+// Set text color function (it checks the lightness of the color
+// and if the color is bright, it returns a dark color)
+// if the background color is white, the text would be black.
+@function set-text-color($color) {
+    @if(lightness($color) > 40) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
 // Media Query Mixins
 @mixin mediaSm {
     @media screen and (max-width: 500px) {
