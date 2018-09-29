@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "A Responsive Portfolio Website",
   "main": "app.js",
+  "homepage": "https://AgkTF.github.io/Portfolio_website",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ -r"
+    "sass": "node-sass -w scss/ -o dist/css/ -r",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Agk TF",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3"
   }
 }
